@@ -1,0 +1,16 @@
+# Product Analytics Case Study — pinned dependencies
+# Install into a Python 3.11 environment with:  pip install -r requirements.txt
+#
+# No statsmodels / scikit-learn: methodology uses stratified cross-tabs and scipy
+# significance tests instead of regression/ML, by explicit choice (see ADR.md) — this
+# env doesn't have them installed and none were added for this project.
+
+pandas==2.3.1          # data wrangling
+numpy==2.3.1            # numeric helpers (transitive)
+scipy==1.16.0            # chi-square / proportion significance tests
+matplotlib==3.10.0       # chart rendering
+seaborn==0.13.2          # chart rendering
+pyarrow==19.0.0           # Parquet cache under data/processed/
+ipykernel==6.29.5         # kernel registration for the notebooks
+plotly==7.1.0             # the registration-to-success funnel chart (notebook 03) only
+kaleido==1.4.0            # static PNG export for the Plotly funnel chart

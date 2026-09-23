@@ -1,0 +1,25 @@
+# macOS / OS files
+.DS_Store
+
+# Python bytecode cache (regenerated on import)
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter notebook checkpoints (autosaves)
+.ipynb_checkpoints/
+
+# Secrets / local config
+.env
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Locally downloaded / derived data — fetched by data/get_data.sh, not committed
+data/oulad/
+data/processed/
