@@ -189,6 +189,23 @@ Two distinct disagreements, at two different layers:
   layer — **<u>attentive human review during the deliverable walkthrough</u>** — catching something the
   other three structurally couldn't, because none of them were asking "what does this word
   actually mean."
+- **The withdrawal figure never got the survivor-matching fix — caught by the user's review of
+  notebook 05, not by any structural QA layer.** Enrollments that withdrew inside the 14-day
+  window can't activate, so they inflate any activated-vs-not gap. That was corrected for the
+  headline success lift (34.8pp → 24.5pp) but not for the parallel withdrawal-rate gap, which
+  stayed on the full population at 27.7pp. Restricted to 14-day survivors it is **5.8pp** — most
+  of the raw gap was the overlap. It surfaced when the user asked which period the withdrawal
+  figure covered. The rigor pass and independent verification both missed it because both were
+  scoped to the headline claim.
+- **The same fix was also missing from the within-subgroup lifts — found while following up a
+  fresh-context cold-read review.** The reviewer flagged that one quoted range rested on a
+  ~50-person subgroup; checking it showed the lifts by subject, education, age band, first-timer
+  status and credit tier were all on the full population too, quoted right beside the survivor-
+  matched 24.5pp (e.g. subjects +20 to +45pp → +17 to +35pp; age bands +34 to +43pp → +24 to
+  +28pp). Every group stays positive, so the qualitative conclusions held; the magnitudes had been
+  overstated by ~10pp here and ~22pp for withdrawal. Lesson for both: when a correction is applied
+  to a headline number, find every sibling figure computed on the same population and re-derive
+  it on the same basis.
 
 ### What I'd do differently next time
 

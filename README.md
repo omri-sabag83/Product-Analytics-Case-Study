@@ -64,8 +64,8 @@ the noisiest part of the curve, still inside an actionable window.
 **[CON]** Activated enrollments succeed at a rate **24.5 points higher** than non-activated ones
 (62.2% vs. 37.7%, measured only among enrollments that survived past the activation window
 itself, to exclude students who couldn't have activated even if willing). This holds within
-every one of the 7 subjects (+20 to +45pp), every education level, every age band, and every
-course-load tier.
+every one of the 7 subjects (+17 to +35pp, same survivor-matched population), every education
+level, every age band, and every course-load tier.
 
 **[HYP] — correlation, not causation.** More engaged students are very likely also more
 motivated or facing fewer outside barriers — either could independently drive success. This
@@ -103,7 +103,7 @@ directly.
 | Role | Metric | Current value | Guards against |
 |---|---|---|---|
 | **Primary** | Week-2 Activation Rate | 61.7% | — |
-| Guardrail | Assessment submission rate, activated vs. not | 67.7% vs. 32.1% | Activation inflated by low-value clicking |
+| Guardrail | Assessment completion rate (share of available assessments submitted), activated vs. not | 67.7% vs. 32.1% | Activation inflated by low-value clicking |
 | Guardrail | Activation-rate gap by deprivation band | 12.5pp | Average gains masking a widening equity gap |
 | Guardrail | Activated-cohort active rate, week 20+ | ~52–64% | A first-burst-only, unsustained "activation" |
 
@@ -124,6 +124,10 @@ during the rigor pass — it didn't survive an exposure-matched re-test. Recorde
 ## Limitations
 
 - Correlational throughout; the headline finding is not proven causal.
+- Confounds were checked one at a time, not jointly: the activation lift holds within each
+  subject, education level, age band, and course-load tier separately, but no multivariate model
+  was used (that would take, e.g., a logistic regression controlling for all of them at once) —
+  so whether the lift survives with all of them held fixed together is untested.
 - No monetization stage exists in the source data — every "value" claim is a labelled proxy.
 - 22.5% of enrollments belong to a student who appears more than once (not necessarily
   retaking — could be two different subjects) — the same person counted twice, not two

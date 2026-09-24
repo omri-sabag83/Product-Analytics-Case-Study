@@ -36,7 +36,7 @@ plausibly both activate and succeed for reasons the data can't fully separate.
 | Role | Metric | Current value |
 |---|---|---|
 | Primary | Week-2 Activation Rate | 61.7% |
-| Guardrail | Assessment submission rate, activated vs. not | 67.7% vs. 32.1% |
+| Guardrail | Assessment completion rate (share of available assessments submitted), activated vs. not | 67.7% vs. 32.1% |
 | Guardrail | Activation-rate gap by deprivation band | 12.5pp |
 | Guardrail | Activated-cohort active rate, week 20+ | ~52–64% |
 
@@ -50,7 +50,9 @@ plausibly both activate and succeed for reasons the data can't fully separate.
 
 ## Limitations
 
-Correlational, not causal. No real monetization data. 22.5% of enrollments belong to a student
+Correlational, not causal. Confounds checked one at a time, not jointly (confirming the lift
+survives all of them at once would take a regression controlling for all of them together). No
+real monetization data. 22.5% of enrollments belong to a student
 who appears more than once, not separate people. One dataset, one platform, 2013–2014.
 
 ## Process
