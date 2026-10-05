@@ -10,6 +10,9 @@ Palette values are the skill's validated default reference instance, used unchan
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+import chart_style  # noqa: F401  thin black frame around every chart image
+from chart_style import frame_png_file  # noqa: F401  same frame for non-matplotlib PNGs (Plotly)
+
 # Fixed categorical order — never reorder by value, never cycle past what's needed.
 CATEGORICAL = [
     "#2a78d6",  # 1 blue
